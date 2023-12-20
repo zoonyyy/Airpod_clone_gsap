@@ -1,0 +1,97 @@
+/* Reset CSS style */
+
+/* google font noto-sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* CSS style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Navigation Bar style */
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #555; */
+}
+
+header .nav-content {
+  width: 100%;
+  max-width: 980px;
+}
+
+header .nav-content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .em 은 자기 부모, .rem은 전체 사이즈의 기준 */
+header .nav-content ul a {
+  color: #d5d5d5;
+  font-size: 0.75rem;
+  line-height: 2.75;
+}
+
+header .nav-content ul a:hover {
+  color: #fff;
+}
+
+header .logo a i,
+header .header a,
+header .bag a i {
+  font-size: 1.125rem;
+}
+
+header .airpod-navbar .nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-logo a {
+  color: #fefefe;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+header .nav-items button {
+  color: #fefefe;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  margin-left: 1.5rem;
+}
+
+header .nav-items button:hover {
+  color: #2997ff;
+}
+
+header .nav-items button:disabled header .nav-items button:disabled:hover {
+  cursor: default;
+  color: #bebebe;
+}
